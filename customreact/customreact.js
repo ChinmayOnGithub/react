@@ -35,8 +35,18 @@ customRender(customReactElement, mainContainer);
 
 /* 
 
-JSX -> reactElement object -(Rendering)-> html (children inserted)
+JSX (js-xml i.e. html) -> reactElement object -(Rendering)-> html (children inserted)
 
+
+reactElement Object looks like this : 
+const reactElement = React.createElement(
+    'a',
+    {
+        href: 'https://google.com',
+        target: "_blank"
+    },
+    'Click to visit Google'
+)
 
 
 Virtual DOM : creating a DOM tree virtually
